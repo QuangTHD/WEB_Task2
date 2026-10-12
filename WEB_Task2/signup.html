@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Management System</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-dark site-nav">
+    <div class="container"><a class="navbar-brand fw-bold" href="index.html">Management System</a><a href="index.html"
+                                                                                                     class="btn btn-sm btn-outline-light">Home</a>
+    </div>
+</nav>
+<main class="auth-wrap">
+    <div class="w-100">
+        <div class="auth-logo">M</div>
+        <h1 class="h4 text-center fw-bold">Create an Account</h1>
+        <p class="text-center text-secondary small">Get started with Management System</p>
+        <form class="auth-card mx-auto" id="signupForm"><label for="name">Full Name</label><input id="name"
+                                                                                                  class="form-control mb-3"
+                                                                                                  required><label
+                for="email">Email Address</label><input id="email" type="email" class="form-control mb-3"
+                                                        required><label for="password">Password</label><input
+                id="password" type="password" minlength="6" class="form-control mb-3" required><label for="confirm">Confirm
+            Password</label><input id="confirm" type="password" minlength="6" class="form-control mb-3" required>
+            <button class="btn btn-primary w-100" type="submit">Create Account</button>
+            <div id="message" class="small mt-3" role="status"></div>
+            <p class="text-center small mt-3 mb-0">Already have an account? <a href="login.html">Sign In</a></p></form>
+    </div>
+</main>
+<footer class="site-footer text-center py-3">&copy; 2026 Management System</footer>
+<script src="script.js"></script>
+</body>
+</html>

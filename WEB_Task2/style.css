@@ -1,0 +1,212 @@
+:root {
+    --navy: #192b4b;
+    --purple: #6936e8
+}
+
+body {
+    background: #f3f6ff;
+    color: #1b2a45;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.site-nav, .site-footer {
+    background: var(--navy)
+}
+
+.site-nav {
+    min-height: 54px
+}
+
+.navbar-brand {
+    font-size: 17px
+}
+
+.hero {
+    height: 390px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: white
+}
+
+.hero:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(12, 29, 58, .85), rgba(12, 29, 58, .28))
+}
+
+.hero-content {
+    position: relative;
+    padding-left: 65px
+}
+
+.hero h1 {
+    font-weight: 800;
+    font-size: clamp(30px, 4vw, 48px);
+    line-height: 1.1;
+    margin: 12px 0
+}
+
+.hero p {
+    max-width: 480px
+}
+
+.hero small, .eyebrow {
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 11px
+}
+
+.eyebrow {
+    color: #4b70e8
+}
+
+.goal-image {
+    border-radius: 18px;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    box-shadow: 0 10px 25px #2234
+}
+
+.feature {
+    height: 100%;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 5px 22px #2030600b
+}
+
+.feature h3 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 10px
+}
+
+.feature p {
+    color: #777;
+    font-size: 13px;
+    margin: 0
+}
+
+.cta {
+    background: #edf3ff
+}
+
+.site-footer {
+    color: #fff;
+    font-size: 12px
+}
+
+.site-footer div {
+    opacity: .65;
+    margin-top: 7px
+}
+
+.auth-wrap {
+    min-height: calc(100vh - 110px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 15px;
+    background: linear-gradient(135deg, #f5f8ff, #edf0ff)
+}
+
+.auth-card {
+    background: white;
+    width: min(100%, 410px);
+    padding: 28px;
+    border-radius: 16px;
+    box-shadow: 0 10px 35px #2a306020
+}
+
+.auth-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: var(--purple);
+    color: white;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+    margin: 0 auto 15px
+}
+
+.auth-card h1 {
+    font-size: 23px;
+    font-weight: 750
+}
+
+.auth-card label {
+    font-size: 13px;
+    font-weight: bold
+}
+
+.auth-card .form-control {
+    background: #f5f7ff
+}
+
+.auth-card .btn-primary {
+    background: var(--purple);
+    border-color: var(--purple)
+}
+
+.course-intro {
+    background: linear-gradient(110deg, #e4ecff, #fff);
+    padding: 35px 15px;
+    border-radius: 10px
+}
+
+.course-card {
+    border-radius: 10px;
+    padding: 20px;
+    height: 100%;
+    border-left: 5px solid
+}
+
+.course-card h3 {
+    font-size: 22px;
+    font-weight: bold
+}
+
+.course-card p {
+    font-size: 14px
+}
+
+.course-html {
+    background: #fff0e9;
+    border-color: #e96b35
+}
+
+.course-css {
+    background: #e8f4ff;
+    border-color: #2780c5
+}
+
+.course-bootstrap {
+    background: #f1e8ff;
+    border-color: #7837b9
+}
+
+.course-js {
+    background: #fffbdc;
+    border-color: #d0ac16
+}
+
+@media (max-width: 576px) {
+    .hero {
+        height: 360px
+    }
+
+    .hero-content {
+        padding-left: 40px;
+        padding-right: 40px
+    }
+
+    .goal-image {
+        height: 240px
+    }
+}

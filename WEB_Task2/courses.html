@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Course - Management System</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-dark site-nav">
+    <div class="container"><a class="navbar-brand fw-bold" href="index.html">Management System</a><a
+            class="btn btn-outline-light btn-sm" href="index.html">Home</a></div>
+</nav>
+<main class="container py-4">
+    <header class="course-intro text-center mb-4"><h1 class="h3 fw-bold">Welcome to My Website</h1>
+        <p class="mb-0">Learn web development with our courses.</p></header>
+    <h2 class="h4 text-center fw-bold mb-4">Our Courses</h2>
+    <div class="row g-4">
+        <div class="col-md-6">
+            <article class="course-card course-html"><h3>HTML</h3>
+                <p>Learn how to create the structure of web pages using headings, paragraphs, images, and links.</p>
+                <button class="btn btn-sm text-white" style="background:#e96b35" data-course="HTML"
+                        data-bs-toggle="modal" data-bs-target="#courseModal">Learn More
+                </button>
+            </article>
+        </div>
+        <div class="col-md-6">
+            <article class="course-card course-css"><h3>CSS</h3>
+                <p>Learn how to style web pages with colors, fonts, spacing, and attractive layouts.</p>
+                <button class="btn btn-primary btn-sm" data-course="CSS" data-bs-toggle="modal"
+                        data-bs-target="#courseModal">Learn More
+                </button>
+            </article>
+        </div>
+        <div class="col-md-6">
+            <article class="course-card course-bootstrap"><h3>Bootstrap</h3>
+                <p>Build responsive websites quickly using Bootstrap's grid system and components.</p>
+                <button class="btn btn-sm text-white" style="background:#7837b9" data-course="Bootstrap"
+                        data-bs-toggle="modal" data-bs-target="#courseModal">Learn More
+                </button>
+            </article>
+        </div>
+        <div class="col-md-6">
+            <article class="course-card course-js"><h3>JavaScript</h3>
+                <p>Make web pages interactive with button clicks, form validation, and dynamic content.</p>
+                <button class="btn btn-sm text-white" style="background:#b99a00" data-course="JavaScript"
+                        data-bs-toggle="modal" data-bs-target="#courseModal">Learn More
+                </button>
+            </article>
+        </div>
+    </div>
+</main>
+<div class="modal fade" id="courseModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header"><h2 class="modal-title fs-5" id="modalTitle">Course Details</h2>
+                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="modalBody"></div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="site-footer text-center py-3">&copy; 2026 Management System</footer>
+<script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

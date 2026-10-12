@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Management System</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark site-nav">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Management System</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span
+                class="navbar-toggler-icon"></span></button>
+    </div>
+    <div class="collapse navbar-collapse justify-content-end" id="nav">
+        <div class="dropdown">
+            <button class="btn btn-sm btn-outline-light dropdown-toggle" data-bs-toggle="dropdown">Home</button>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+                <li><a class="dropdown-item" href="courses.html">Courses</a></li>
+            </ul>
+        </div>
+    </div>
+
+</nav>
+<div id="hero" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button data-bs-target="#hero" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+        <button data-bs-target="#hero" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button data-bs-target="#hero" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="hero" style="background-image:url('images/photo-1521737711867-e3b97375f902.avif')">
+                <div class="container hero-content"><small>WORK TOGETHER</small>
+                    <h1>Better Team<br>Collaboration</h1>
+                    <p>Keep your team connected, organize responsibilities, and manage tasks in one convenient
+                        place.</p><a class="btn btn-primary rounded-pill" href="signup.html">Join Us →</a></div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="hero" style="background-image:url('images/photo-1454165804606-c3d57bc86b40.avif')">
+                <div class="container hero-content"><small>WORK SMARTER</small>
+                    <h1>Achieve Your Goals</h1>
+                    <p>Track progress, manage information, and improve productivity with a clear and organized
+                        workflow.</p><a class="btn btn-primary rounded-pill" href="login.html">Login Now →</a></div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="hero" style="background-image:url('images/photo-1497366754035-f200968a6e72.avif')">
+                <div class="container hero-content"><small>STAY ORGANIZED</small>
+                    <h1>Manage With Ease</h1>
+                    <p>Bring your work and ideas together in one place.</p><a class="btn btn-primary rounded-pill"
+                                                                              href="courses.html">Explore →</a></div>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" data-bs-target="#hero" data-bs-slide="prev"><span
+            class="carousel-control-prev-icon"></span></button>
+    <button class="carousel-control-next" data-bs-target="#hero" data-bs-slide="next"><span
+            class="carousel-control-next-icon"></span></button>
+</div>
+<main>
+    <section class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-5"><img class="img-fluid goal-image" src="images/photo-1497366811353-6870744d04b2.avif"
+                                       alt="Modern meeting room"></div>
+            <div class="col-lg-7"><span class="eyebrow">OUR GOAL</span>
+                <h2>Goal of This Website</h2>
+                <p class="text-secondary">Our goal is to provide a simple, secure, and efficient management system that
+                    helps users organize their work, manage information, track progress, and improve productivity — all
+                    in one place.</p>
+                <div class="row g-3">
+                    <div class="col-sm-6">
+                        <div class="feature"><span>👥</span>
+                            <h3>Easy to Use</h3>
+                            <p>A simple and clear interface for every user.</p></div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="feature"><span>🔒</span>
+                            <h3>Secure</h3>
+                            <p>Keep information protected and organized properly.</p></div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="feature"><span>🚀</span>
+                            <h3>Efficient</h3>
+                            <p>Save time by managing tasks and information together.</p></div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="feature"><span>📈</span>
+                            <h3>Better Productivity</h3>
+                            <p>Track progress and work toward your goals.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cta text-center py-5">
+        <div class="container"><h2>Ready to Get Started?</h2>
+            <p class="text-secondary">Create your account and start organizing your work today.</p><a
+                    class="btn btn-primary rounded-pill px-4" href="signup.html">Create an Account</a></div>
+    </section>
+</main>
+<footer class="site-footer text-center py-3"><strong>Management System</strong>
+    <div>&copy; 2026 Management System. All rights reserved.</div>
+</footer>
+
+<script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

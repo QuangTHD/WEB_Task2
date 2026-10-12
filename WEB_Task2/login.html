@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Management System</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-dark site-nav">
+    <div class="container"><a class="navbar-brand fw-bold" href="index.html">Management System</a><a
+            class="btn btn-outline-light btn-sm" href="index.html">Home</a></div>
+</nav>
+<main class="auth-wrap">
+    <div class="text-center w-100">
+        <div class="auth-logo">M</div>
+        <h1 class="h4 fw-bold">Welcome Back!</h1>
+        <p class="text-secondary small">Sign in to continue to your account</p>
+        <form class="auth-card text-start mx-auto" id="loginForm"><h2 class="h6 fw-bold">Login to your account</h2>
+            <p class="text-secondary small">Enter your email and password to get started.</p><label for="email">Email
+                Address</label><input class="form-control mb-3" type="email" id="email" placeholder="name@example.com"
+                                      required>
+            <div class="d-flex justify-content-between"><label for="password">Password</label><a class="small" href="#"
+                                                                                                 id="forgot">Forgot
+                password?</a></div>
+            <div class="input-group"><input class="form-control" type="password" id="password"
+                                            placeholder="Enter password" required>
+                <button class="btn btn-outline-secondary" type="button" id="togglePassword">Show</button>
+            </div>
+            <button class="btn btn-primary w-100 mt-2" type="submit">Sign In</button>
+            <div id="message" class="small mt-3" role="status"></div>
+            <p class="small text-center mt-3 mb-0">Don't have an account? <a href="signup.html">Create an account</a>
+            </p></form>
+    </div>
+</main>
+<footer class="site-footer text-center py-3">&copy; 2026 Management System</footer>
+<script src="script.js"></script>
+</body>
+</html>
